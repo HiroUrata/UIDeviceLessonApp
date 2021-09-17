@@ -26,9 +26,15 @@ class ViewController: UIViewController {
     
     @IBAction func detectionStart(_ sender: Any) {
         
+        UIDevice.current.beginGeneratingDeviceOrientationNotifications()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(devicOrientationDetection), name: UIDevice.orientationDidChangeNotification, object: nil)
     }
     
-   
+    @objc func devicOrientationDetection(){
+        
+
+
+    }
 }
 
