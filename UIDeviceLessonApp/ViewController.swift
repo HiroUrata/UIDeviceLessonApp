@@ -9,11 +9,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var detectionStartButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        detectionStartButton.layer.cornerRadius = 18.0
+        detectionStartButton.layer.shadowOffset = CGSize(width: 1, height: 1)
+        detectionStartButton.layer.shadowRadius = 10.0
+        detectionStartButton.layer.shadowOpacity = 0.6
+        
+        
     }
-
-
+    
+    
+    @IBAction func detectionStart(_ sender: Any) {
+        
+        
+    }
+    
+   
 }
 
