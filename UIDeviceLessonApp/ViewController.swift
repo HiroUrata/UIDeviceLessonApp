@@ -33,7 +33,23 @@ class ViewController: UIViewController {
     
     @objc func devicOrientationDetection(){
         
-
+        switch UIDevice.current.orientation{
+        
+        case .portrait:
+            print("上")
+            
+        case .portraitUpsideDown:
+            print("下")
+            
+        case .landscapeLeft:
+            print("左")
+            
+        case .landscapeRight:
+            print("右")
+            
+        default:
+            print("取得出来ませんでした")
+        }
 
     }
 }
